@@ -123,7 +123,8 @@ async function Intro(senderPsid, receivedMessage) {
 // send intro
 async function sendIntro(senderPsid) {
     let response = {
-        text: `Thailand Anywhere team is happy to serve you on your holiday plans. We offer car rental services, hotel booking, entry tickets, group tours and custom travel plans at great prices!🙇\n\nPlease select below to find out all about Thailand Anywhere's services and book your desired products.🙇`,
+        text: `Thailand Anywhere team is happy to serve you on your holiday plans. 🤗 💕\n\n
+        We offer car rental services, hotel booking, entry tickets, group tours and custom travel plans at great prices! 🚙🎫🏩\n\nPlease select below to find out all about Thailand Anywhere's services and book your desired products. 🤩🌁🌅`,
         quick_replies: [
             {
                 content_type: "text",
@@ -544,7 +545,7 @@ async function KanchanaburiGroupTour(senderPsid, receivedMessage) {
                 template_type: "generic",
                 elements: [
                     {
-                        title: "Have Fun",
+                        title: "What's next?",
                         image_url:
                             "http://thailandanywhere.npthosting.cyou/kanchanaburi/Caurosal-kanchanaburi.jpg",
                         buttons: [
@@ -586,7 +587,7 @@ async function PattayaGroupTour(senderPsid, receivedMessage) {
                 template_type: "generic",
                 elements: [
                     {
-                        title: "Have Fun",
+                        title: "What's next?",
                         image_url:
                             "http://thailandanywhere.npthosting.cyou/pattaya/caurosal-pattaya.jpg",
                         buttons: [
@@ -628,7 +629,7 @@ async function KhaoyaiGroupTour(senderPsid, receivedMessage) {
                 template_type: "generic",
                 elements: [
                     {
-                        title: "Have Fun",
+                        title: "What's next?",
                         image_url:
                             "http://thailandanywhere.npthosting.cyou/khaoyai/Caurosal-khao%20yai.jpg",
                         buttons: [
@@ -670,7 +671,7 @@ async function AyutthayaGroupTour(senderPsid, receivedMessage) {
                 template_type: "generic",
                 elements: [
                     {
-                        title: "Have Fun",
+                        title: "What's next?",
                         image_url:
                             "http://thailandanywhere.npthosting.cyou/ayutthaya/caurosal-ayutthaya.jpg",
                         buttons: [
@@ -1126,11 +1127,14 @@ async function handlePostback(senderPsid, receivedPostback) {
     // End Ayuttaya
     else if (payload === "AIR_TIC") {
         TalkToAgent(senderPsid);
-    } else if (payload === "AIR_TIC") {
+    } else if (payload === "HB") {
         TalkToAgent(senderPsid);
-    } else if (payload === "AIR_TIC") {
+    } else if (payload === "PVT") {
         TalkToAgent(senderPsid);
-    } else if (payload === "AIR_TIC") {
+    } else if (payload === "ET") {
+        TalkToAgent(senderPsid);
+    }
+    else if (payload === "AT") {
         TalkToAgent(senderPsid);
     }
     //Payment Group Tour
