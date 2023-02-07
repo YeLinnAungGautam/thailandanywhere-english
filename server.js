@@ -81,7 +81,8 @@ async function Intro(senderPsid, receivedMessage) {
         receivedMessage.text === "Hi"
     ) {
         response = {
-            text: `Thailand Anywhere team is happy to serve you on your holiday plans. We offer car rental services, hotel booking, entry tickets, group tours and custom travel plans at great prices!🙇\n\nPlease select below to find out all about Thailand Anywhere's services and book your desired products.🙇`,
+            text: `Thailand Anywhere team is happy to serve you on your holiday plans. 🤗 💕\n\n
+            We offer car rental services, hotel booking, entry tickets, group tours and custom travel plans at great prices! 🚙🎫🏩\n\nPlease select below to find out all about Thailand Anywhere's services and book your desired products. 🤩🌁🌅`,
             quick_replies: [
                 {
                     content_type: "text",
@@ -176,7 +177,7 @@ async function ChoosePackages(senderPsid) {
                     {
                         title: "Kanchanaburi",
                         image_url:
-                            "http://thailandanywhere.npthosting.cyou/kanchanaburi/Caurosal-kanchanaburi.jpg",
+                            "http://thailandanywhere.npthosting.cyou/kanchanaburi/KCB-Cau-1.jpg",
                         subtitle: "Every Saturday at 7am\n1850฿ per Person",
                         buttons: [
                             {
